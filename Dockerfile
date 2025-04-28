@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy package.json and potentially package-lock.json (if it exists)
 COPY package.json ./
 # If you use package-lock.json, uncomment the next line
-# COPY package-lock.json ./
+COPY package-lock.json ./
 
 # Install dependencies securely using npm ci (requires package-lock.json)
 # If you don't have/use package-lock.json, use 'npm install' instead
